@@ -1,6 +1,6 @@
 # Base configs
-baseurl: "https://tommy-nguyen17.github.io/Pokemon-Standard-Playables/"
-# baseurl: "" # Comment the above line and uncomment this to test the website locally
+# baseurl: "https://tommy-nguyen17.github.io/Pokemon-Standard-Playables/"
+baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-46465113-2"
@@ -15,3 +15,4 @@ header:
 footer:
  name: "Hey there, my name is Tommy!"
  bio: "I am a software and game developer. I love playing PTCG and software development. I hope this website serves the community and helps players with rotation!"
+ memory: "In memory of JustInBasil. Thank you for everything."

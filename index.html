@@ -29,7 +29,8 @@ layout: default
             {% for myimage in image_files %} 
             <article class="thumb">
                 <a href="{{site.baseurl}}{{ site.image_fulls_loc }}/{{ myimage.name }}" class="image">
-                    <img src="{{myimage.path}}" alt="{{myimage.name}}"></a>
+                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+                     data-name="{{ image.name }}"/></a>
                 <!--<h2></h2>
                 <p></p>-->
             </article>
@@ -44,7 +45,8 @@ layout: default
         {% assign image_files = site.static_files | where: "rotating_image", true %}
         {% for myimage in image_files %} 
         <a href="{{site.baseurl}}{{ site.image_rotating_fulls_loc }}/{{ myimage.name }}" class="image">
-                    <img src="{{myimage.path}}" alt="{{myimage.name}}"></a>
+                    <img src="{{ site.baseurl }}{{ site.image_rotating_thumbs_loc }}/{{ image.name }}" alt=""
+                     data-name="{{ image.name }}"/></a>
             <!--<h2></h2>
             <p></p>-->
         {% endfor %}         

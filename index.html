@@ -43,7 +43,8 @@ layout: default
     <div data-exif='{{ site.exif }}'>
         {% assign image_files = site.static_files | where: "rotating_image", true %}
         {% for myimage in image_files %} 
-        <img src="{{myimage.path}}" alt="{{myimage.name}}"></a>
+        <a href="{{site.baseurl}}{{ site.image_rotating_fulls_loc }}/{{ myimage.name }}" class="image">
+                    <img src="{{myimage.path}}" alt="{{myimage.name}}"></a>
             <!--<h2></h2>
             <p></p>-->
         {% endfor %}         

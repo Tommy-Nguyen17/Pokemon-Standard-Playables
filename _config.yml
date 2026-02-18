@@ -1,20 +1,8 @@
 # Base configs
-baseurl: "https://tommy-nguyen17.github.io/Pokemon-Standard-Playables/"
-# baseurl: "" # Comment the above line and uncomment this to test the website locally
+# baseurl: "https://tommy-nguyen17.github.io/Pokemon-Standard-Playables/"
+baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "images/fulls"
 image_thumbs_loc: "images/thumbs"
-image_rotating_thumbs_loc: "rotating_images/rotating_thumbs"
-image_rotating_fulls_loc: "rotating_images/rotating_fulls"
-google_analytics: "UA-46465113-2"
-defaults: 
-  - scope: 
-      path: "images/fulls"
-    values: 
-      non_rotating_image: true
-  - scope: 
-      path: "rotating_images/rotating_fulls"
-    values: 
-      rotating_image: true
 # UI configs
 title: "Pokemon Standard Playables"
 subtitle: "Everything that's meta relevant for the 2026-2027 Pokemon TCG Standard Format"

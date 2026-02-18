@@ -21,37 +21,19 @@ layout: default
     </header>
 
     <!-- Main -->
-    <div class="myDiv">
-        <h2>Non-Rotating Staples</h2>
-    </div>
     <div id="main" data-exif='{{ site.exif }}'>
-            {% assign image_files = site.static_files | where: "non_rotating_image", true %}
-            {% for myimage in image_files %}
-            {% if image_files.path contains 'fulls' %} 
-            <article class="thumb">
-                <a href="{{site.baseurl}}{{ site.image_fulls_loc }}/{{ myimage.name }}" class="image">
-                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-                <!--<h2></h2>
-                <p></p>-->
-            </article>
-            {% endfor %}
-        
-    </div>
-
-    <div class="myDiv">
-        <h2>Rotating Staples</h2>
-    </div>
-    <div data-exif='{{ site.exif }}'>
-        {% assign image_files = site.static_files | where: "rotating_image", true %}
-        {% for myimage in image_files %} 
-        {% if image_files.path contains 'rotating_fulls' %}
-        <a href="{{site.baseurl}}{{ site.image_rotating_fulls_loc }}/{{ myimage.name }}" class="image">
-                    <img src="{{ site.baseurl }}{{ site.image_rotating_thumbs_loc }}/{{ image.name }}" alt=""
+        {% for image in site.static_files%}
+        {% if image.path contains 'fulls' %}
+        <article class="thumb">
+            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
                      data-name="{{ image.name }}"/></a>
             <!--<h2></h2>
             <p></p>-->
-        {% endfor %}         
+        </article>
+        {% endif %}
+        {% endfor %}
+        
     </div>
  
     <!-- Footer -->

@@ -3,7 +3,7 @@ layout: default
 ---
 <style>
 .myDiv { 
-  text-align: center;
+    text-align: center;
 }
 </style>
 
@@ -19,20 +19,34 @@ layout: default
             </ul>
         </nav>
     </header>
-
+    
+    <h1>Non-Rotating Staples</h1>
     <!-- Main -->
     <div id="main" data-exif='{{ site.exif }}'>
-        {% for image in site.static_files%}
-        {% if image.path contains 'fulls' %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
-        </article>
-        {% endif %}
-        {% endfor %}
+                {% for image in site.static_files%}
+                {% if image.path contains 'non_rotating_fulls' %}
+                <article class="thumb">
+                    <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                        <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+                            data-name="{{ image.name }}"/></a>
+                    <!--<h2></h2>
+                    <p></p>-->
+                </article>
+                {% endif %}
+                {% endfor %}
+
+            <h1>Rotating Staples</h1>
+                {% for image in site.static_files%}
+                {% if image.path contains 'goofy_goober_1' %}
+                <article class="thumb">
+                    <a href="{{ site.baseurl }}{{ site.image_rotating_fulls_loc }}/{{ image.name }}" class="image">
+                        <img src="{{ site.baseurl }}{{ site.image_rotating_thumbs_loc }}/{{ image.name }}" alt=""
+                            data-name="{{ image.name }}"/></a>
+                    <!--<h2></h2>
+                    <p></p>-->
+                </article>
+                {% endif %}
+                {% endfor %}   
         
     </div>
  

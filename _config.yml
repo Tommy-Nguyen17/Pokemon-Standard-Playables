@@ -1,6 +1,6 @@
 # Base configs
-# baseurl: "https://tommy-nguyen17.github.io/Pokemon-Standard-Playables/"
-baseurl: "" # Comment the above line and uncomment this to test the website locally
+baseurl: "https://tommy-nguyen17.github.io/Pokemon-Standard-Playables/"
+# baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "images/fulls/non_rotating_fulls"
 image_thumbs_loc: "images/thumbs/non_rotating_thumbs"
 image_rotating_fulls_loc: "images/fulls_2/goofy_goober_1"
